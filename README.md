@@ -4,14 +4,6 @@
 
 This project replaces traditional link aggregators with a fully customized experience, combining a personal landing page, interactive resume and developer branding into a single website.
 
----
-
-# 🌐 Live Preview
-
-> Coming Soon
-
----
-
 # 📖 About the Project
 
 **Vitor Melo Hub** is my personal website designed to centralize my online presence while showcasing my work, experience and journey as a Backend Developer.
