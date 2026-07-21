@@ -170,11 +170,11 @@ vitordutra1126@gmail.com
 
 💼 **LinkedIn**
 
-https://linkedin.com/in/vitormelo
+https://www.linkedin.com/in/vitordutramelo
 
 💻 **GitHub**
 
-https://github.com/vitordutra1125
+https://github.com/VitorDutraMelo
 
 🌐 **Website**
 
