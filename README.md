@@ -144,34 +144,6 @@ vitor-melo-hub/
 
 ---
 
-# 📸 Preview
-
-## 🏠 Home
-
-> Add a screenshot here
-
-```md
-![Home](./assets/images/home-preview.png)
-```
-
----
-
-## 🚀 My Journey
-
-```md
-![Journey](./assets/images/journey-preview.png)
-```
-
----
-
-## 📄 Resume
-
-```md
-![Resume](./assets/images/resume-preview.png)
-```
-
----
-
 # 🎯 Purpose
 
 This project was created to:
