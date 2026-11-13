@@ -1,0 +1,34 @@
+﻿# Backups
+backup-*/
+*-backup-*/
+
+# Arquivos locais
+.openai/
+.vscode/
+.idea/
+node_modules/
+.env
+.env.*
+!.env.example
+
+# Temporarios
+*.log
+.DS_Store
+Thumbs.db
+
+# Arquivos de desenvolvimento e referencias visuais
+assets/reference.png
+assets/reference/
+assets/crops/
+assets/character/vitor-about.png
+assets/character/vitor-hero.png
+assets/london/london-footer.png
+assets/Neon Backend Developer Portrait.png
+assets/Vitor Melo_ Código em Neon.png
+assets/WhatsApp Image 2026-11-13 at 11.58.17.jpeg
+assets/cv/
+assets/perfil.jpeg
+
+# Backups locais
+backup-*/
+*-backup-*/
