@@ -1,6 +1,6 @@
 ﻿<!doctype html>
 <html lang="pt-BR"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><meta name="description" content="Vitor Melo — Backend Developer em Londres."/><title>Vitor Melo — Backend Developer</title><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Permanent+Marker&display=swap" rel="stylesheet"/><link rel="stylesheet" href="styles.css"/></head>
-<body><a class="skip" href="#conteudo">Pular para conteúdo</a><header id="inicio"><a class="brand" href="#inicio">vitormelo<span>.dev</span></a><button class="menu" aria-controls="nav" aria-label="Abrir menu" aria-expanded="false">☰</button><nav id="nav"><a class="active" href="#inicio">Home</a><a href="#projetos">Projetos</a><a href="#sobre">Sobre</a><a href="#servicos">Serviços</a><a href="#blog">Blog</a><a href="#contato">Contato</a></nav></header>
+<body><a class="skip" href="#conteudo">Pular para conteúdo</a><header id="inicio"><a class="brand" href="#inicio">vitormelo<span>.dev</span></a><button class="menu" aria-controls="nav" aria-label="Abrir menu" aria-expanded="false">☰</button><nav id="nav"><a class="active" href="#inicio">Home</a><a href="#projetos">Projetos</a><a href="#sobre">Sobre</a><a href="#servicos">Serviços</a><a href="#blog" data-open-blog="true">Blog</a><a href="#contato">Contato</a></nav></header>
 <main id="conteudo"><section class="hero shell"><div class="hero-copy"><p class="hello">Olá,<br/>eu sou</p><h1>VITOR MELO</h1><p class="role">Backend Developer</p><ul class="capabilities"><li>APIs</li><li>Bancos de Dados</li><li>Web Apps</li><li>Integrações</li></ul><p class="intro">Desenvolvedor Back-end focado em construir APIs seguras, escaláveis e produtos digitais de verdade.</p><div class="actions"><a class="button lime" href="#projetos">▶ &nbsp;Ver Projetos</a><a class="button ghost" href="assets/Vitor-Melo-Backend-Developer.pdf" download>Baixar CV ↓</a></div></div><figure class="hero-art"><img src="assets/character/v2/vitor-hero.png" alt="Ilustração de Vitor Melo no notebook, com boné Boston e Londres ao fundo"/></figure></section>
 <section class="portfolio shell"><div><h2>☆ MEU PORTFÓLIO</h2><p>Projetos reais, APIs, aplicações completas e soluções que mostram minha evolução como desenvolvedor.</p><a href="#projetos">Explorar projetos &nbsp;→</a></div><img src="assets/london/v2/london-portfolio.png" alt="Ilustração de Vitor Melo diante do horizonte de Londres"/></section>
 <section class="projects shell" id="projetos"><div class="title-row"><h2>PROJETOS EM DESTAQUE</h2><a href="https://github.com/VitorDutraMelo" target="_blank" rel="noreferrer">Ver todos os projetos &nbsp;→</a></div><div id="projects-grid" class="project-grid"></div></section>
@@ -60,7 +60,23 @@
 </dialog>
 <script src="journey-content.js"></script>
 <script src="app.js"></script>
+<dialog id="blog-dialog" class="blog-dialog" aria-labelledby="blog-dialog-title">
+  <div class="blog-dialog-inner">
+    <button type="button" class="blog-dialog-close" aria-label="Fechar aviso do blog">×</button>
+
+    <svg class="blog-warning-icon" viewBox="0 0 100 100" aria-hidden="true">
+      <path d="M50 8 L96 88 Q98 93 92 93 H8 Q2 93 4 88 Z"
+            fill="#ff3b3b"/>
+      <rect x="46" y="34" width="8" height="30" rx="4" fill="#111111"/>
+      <circle cx="50" cy="76" r="5" fill="#111111"/>
+    </svg>
+
+    <h2 id="blog-dialog-title">EM BREVE!</h2>
+    <p>Em breve disponível para vocês!</p>
+  </div>
+</dialog>
 </body></html>
+
 
 
 

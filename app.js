@@ -54,22 +54,6 @@ document.getElementById("projects-grid").innerHTML =
 
     return `
       <article class="project-card">
-        <div class="project-media">
-          <img
-            src="${image}"
-            alt="Imagem do projeto ${name}"
-            loading="lazy"
-            onerror="this.hidden=true;this.nextElementSibling.hidden=false"
-          >
-          <div class="project-image-empty" hidden>
-            <span>
-              Imagem do projeto<br>
-              <strong>${name}</strong>
-              <small>Imagem pendente</small>
-            </span>
-          </div>
-        </div>
-
         <div class="project-copy">
           <h3>${name}</h3>
           <p>${description}</p>
@@ -79,12 +63,7 @@ document.getElementById("projects-grid").innerHTML =
             ).join("")}
           </ul>
 
-          <a class="project-github"
-            href="${escapeHtml(url)}"
-            target="_blank"
-            rel="noopener noreferrer">
-            Ver no GitHub ↗
-          </a>
+          
         </div>
       </article>
     `;
@@ -150,3 +129,35 @@ const menu=document.querySelector('.menu'),nav=document.querySelector('#nav');me
   });
 })();
 
+
+
+
+
+// VITORMELO BLOG MODAL
+(() => {
+  const dialog = document.getElementById("blog-dialog");
+  const triggers = document.querySelectorAll("[data-open-blog]");
+  const closeButton = dialog?.querySelector(".blog-dialog-close");
+
+  if (!dialog || !triggers.length) return;
+
+  triggers.forEach((trigger) => {
+    trigger.addEventListener("click", (event) => {
+      event.preventDefault();
+
+      if (!dialog.open) {
+        dialog.showModal();
+      }
+    });
+  });
+
+  closeButton?.addEventListener("click", () => {
+    dialog.close();
+  });
+
+  dialog.addEventListener("click", (event) => {
+    if (event.target === dialog) {
+      dialog.close();
+    }
+  });
+})();
