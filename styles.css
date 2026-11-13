@@ -566,3 +566,17 @@
     object-fit: contain;
   }
 }
+
+/* ABOUT CHARACTER BOTTOM CLEANUP */
+.about-visual {
+  overflow: hidden;
+}
+
+.about-visual img {
+  display: block;
+  width: 100%;
+  height: auto;
+  clip-path: inset(0 0 8% 0);
+  margin-bottom: -8%;
+}
+
