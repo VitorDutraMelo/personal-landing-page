@@ -1,207 +1,170 @@
-# 🚀 Vitor Melo Hub
+﻿<div align="center">
 
-> A premium personal developer hub built with **HTML5**, **CSS3** and **Vanilla JavaScript**.
+# Vitor Melo — Developer Portfolio
 
-This project replaces traditional link aggregators with a fully customized experience, combining a personal landing page, interactive resume and developer branding into a single website.
+### Backend Developer | APIs | Databases | Digital Products
 
-# 📖 About the Project
+**A personal portfolio built to showcase my development journey, technical skills, and real-world projects.**
 
-**Vitor Melo Hub** is my personal website designed to centralize my online presence while showcasing my work, experience and journey as a Backend Developer.
+[Live Website](https://vitormelo.dev) · [GitHub](https://github.com/VitorDutraMelo) · [LinkedIn](https://www.linkedin.com/in/vitordutramelo)
 
-Instead of using platforms like Linktree, I decided to build my own solution from scratch using only native web technologies.
+![Vitor Melo — Portfolio Hero](assets/character/v2/vitor-hero.png)
 
-The project focuses on:
-
-- Premium UI/UX
-- Modern animations
-- Responsive design
-- Personal branding
-- Interactive Resume
-- Clean code
-- Performance
-- Accessibility
+</div>
 
 ---
 
-# ✨ Features
+## About the Portfolio
 
-## 🏠 Landing Page
+This repository contains the source code for my personal developer portfolio, available at **[vitormelo.dev](https://vitormelo.dev)**.
 
-- Premium Hero Section
-- Responsive Layout
-- Glassmorphism Design
-- Smooth Animations
-- Personal Links
-- Social Profiles
-- Interactive Cards
+The website highlights my work as a backend developer, my technical interests, and the digital products I am building.
 
----
+It combines a custom illustrated visual identity with a responsive layout, interactive components, and a project showcase.
 
-## 🚀 My Journey
+### Highlights
 
-A dedicated page telling my story:
-
-- 🇧🇷 Brazil
-- ✈️ Moving to London
-- 👷 Construction Industry
-- 💻 Backend Development
-- 🎥 Content Creation
-- 🎯 Future Goals
-
-Including:
-
-- Animated Timeline
-- Statistics
-- Technologies
-- Personal Mission
+- Responsive design for desktop and mobile
+- Custom illustrations and visual identity
+- Interactive navigation
+- Dynamic project cards
+- Technology and skills showcase
+- Personal journey dialog
+- Direct WhatsApp contact
+- GitHub, LinkedIn, and Instagram integration
+- Downloadable CV
+- Custom domain powered by GitHub Pages
 
 ---
 
-## 📄 Interactive Resume
+## Visual Identity
 
-Instead of displaying a static PDF, the resume is presented as a premium web page.
+The portfolio uses a distinctive visual language with dark backgrounds, expressive illustrations, and colorful accents.
 
-Features include:
+### London Illustration
 
-- Professional Summary
-- Engineering Highlights
-- Interactive Skills
-- Work Experience Timeline
-- Education
-- Languages
-- Project Showcase
-- PDF Preview
-- PDF Download
+![Vitor Melo — London Portfolio Illustration](assets/london/v2/london-portfolio.png)
+
+### About Me
+
+![Vitor Melo — About Illustration](assets/character/v2/vitor-about.png)
 
 ---
 
-## 🎨 UI Highlights
+## Featured Projects
 
-- Dark Theme
-- Neon Green Accent
-- Glassmorphism
-- Hover Effects
-- Animated Counters
-- Scroll Animations
-- Responsive Components
-- Accessible Navigation
+### The Club
+
+A social fitness platform focused on challenges, activity tracking, competition, rankings, and virtual rewards.
+
+**Technologies:** Node.js, TypeScript, Express, PostgreSQL, Prisma
+
+### PIKO
+
+A virtual companion ecosystem designed around interaction, tasks, rewards, and a connected experience for families.
+
+**Technologies:** C++, LVGL, Node.js, TypeScript, PostgreSQL
+
+### TradePulse
+
+A market-analysis platform focused on data processing, technical analysis, and informational trading signals.
+
+**Technologies:** Python, Node.js, TypeScript, React
+
+### LoyaltyQR
+
+A digital loyalty platform focused on helping businesses manage customer relationships, rewards, and loyalty programs.
+
+**Technologies:** Node.js, TypeScript, PostgreSQL
+
+> Project screenshots will be added as the individual projects evolve.
 
 ---
 
-# 🛠 Technologies
+## Technology Stack
 
-- HTML5
-- CSS3
-- JavaScript (ES6+)
+| Area | Technologies |
+|------|-------------|
+| Markup | HTML5 |
+| Styling | CSS3 |
+| Interactivity | JavaScript |
+| Version Control | Git and GitHub |
+| Hosting | GitHub Pages |
+| Domain | vitormelo.dev |
+
+The portfolio is built without a frontend framework, keeping the implementation lightweight and straightforward to maintain.
 
 ---
 
-# 📂 Project Structure
+## Project Structure
 
 ```text
-vitor-melo-hub/
-│
+personal-landing-page/
 ├── assets/
-│   ├── images/
-│   ├── icons/
-│   ├── logos/
-│   └── favicon/
-│
-├── css/
-│
-├── js/
-│
-├── pages/
-│   ├── journey/
-│   └── resume/
-│
-├── cv/
-│
+│   ├── character/
+│   │   └── v2/
+│   │       ├── vitor-hero.png
+│   │       └── vitor-about.png
+│   ├── london/
+│   │   └── v2/
+│   │       └── london-portfolio.png
+│   ├── projects/
+│   └── Vitor-Melo-Backend-Developer.pdf
 ├── index.html
-├── README.md
-└── LICENSE
+├── styles.css
+├── app.js
+├── journey-content.js
+├── CNAME
+├── .gitignore
+└── README.md
 ```
 
 ---
 
-# 🚀 Current Pages
+## Running Locally
 
-| Page | Status |
-|------|--------|
-| Landing Page | ✅ |
-| My Journey | ✅ |
-| Interactive Resume | ✅ |
-| Portfolio | 🔜 |
-| Blog | 🔜 |
+Clone the repository:
 
----
+```bash
+git clone https://github.com/VitorDutraMelo/personal-landing-page.git
+```
 
-# 🎯 Purpose
+Navigate into the project:
 
-This project was created to:
+```bash
+cd personal-landing-page
+```
 
-- Replace Linktree with a fully customized solution.
-- Strengthen my personal brand.
-- Showcase my projects and experience.
-- Demonstrate front-end development skills.
-- Provide recruiters and clients with a modern experience.
+Start a local HTTP server:
 
----
+```bash
+python -m http.server 5500
+```
 
-# 💡 Future Improvements
+Then open:
 
-- Portfolio page
-- Dark/Light mode
-- Multi-language support
-- Blog section
-- Contact form
-- Project filters
-- Analytics
-- SEO improvements
-- Performance optimizations
+**http://localhost:5500**
+
+No dependency installation or build process is required.
 
 ---
 
-# 📬 Contact
+## Contact
 
-📧 **Email**
+Interested in collaborating, discussing a project, or connecting professionally?
 
-vitordutra1126@gmail.com
-
-💼 **LinkedIn**
-
-https://www.linkedin.com/in/vitordutramelo
-
-💻 **GitHub**
-
-https://github.com/VitorDutraMelo
-
-🌐 **Website**
-
-Coming Soon
+- **Website:** [vitormelo.dev](https://vitormelo.dev)
+- **GitHub:** [VitorDutraMelo](https://github.com/VitorDutraMelo)
+- **LinkedIn:** [Vitor Dutra Melo](https://www.linkedin.com/in/vitordutramelo)
+- **Instagram:** [vitormelodev](https://instagram.com/vitormelodev)
+- **WhatsApp:** [Get in touch](https://wa.me/447771223604)
 
 ---
 
-# ⭐ Support
+<div align="center">
 
-If you enjoyed this project, consider giving it a ⭐ on GitHub.
+**Designed and developed by Vitor Melo**
 
----
+[Back to top](#vitor-melo--developer-portfolio)
 
-# 📄 License
-
-This project is licensed under the MIT License.
-
----
-
-## 👨‍💻 Author
-
-**Vitor Melo**
-
-Backend Developer
-
-🇧🇷 Brazilian
-
-📍 London, United Kingdom
-
-Building scalable backend systems while documenting my journey in technology.
+</div>
