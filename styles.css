@@ -580,3 +580,100 @@
   margin-bottom: -8%;
 }
 
+
+/* DEV NOTES EXPERIENCE V1 */
+
+.blog {
+  scroll-margin-top: 110px;
+  padding-top: 18px;
+  padding-bottom: 22px;
+}
+
+.dev-notes-card {
+  border: 1px solid #40354f;
+  border-radius: 24px;
+  padding: clamp(24px, 4vw, 42px);
+  background: #14111d;
+  color: #fff;
+}
+
+.dev-notes-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.dev-notes-status {
+  color: #d7ff00;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: .14em;
+}
+
+.dev-notes-terminal {
+  color: #d7ff00;
+  font-family: monospace;
+  font-size: 28px;
+  font-weight: 800;
+}
+
+.dev-notes-card h2 {
+  margin: 0 0 16px;
+  color: #fff;
+  font-size: clamp(30px, 5vw, 46px);
+  letter-spacing: -.04em;
+}
+
+.dev-notes-card h2 span {
+  color: #d7ff00;
+}
+
+.dev-notes-card p {
+  max-width: 620px;
+  color: #c6c0ce;
+  font-size: clamp(15px, 2vw, 17px);
+  line-height: 1.65;
+}
+
+.dev-notes-footer {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  margin-top: 22px;
+  color: #a7a0b4;
+  font-size: 13px;
+}
+
+.dev-notes-footer span {
+  color: #d7ff00;
+  font-size: 20px;
+}
+
+.blog-countdown {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  margin-top: 22px;
+}
+
+.blog-countdown strong {
+  color: #d7ff00;
+  font-size: 52px;
+  line-height: 1;
+  font-weight: 900;
+  font-variant-numeric: tabular-nums;
+}
+
+.blog-countdown small {
+  color: #a9a1b7;
+  font-size: 12px;
+  letter-spacing: .02em;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}

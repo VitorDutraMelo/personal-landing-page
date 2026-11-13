@@ -138,8 +138,63 @@ const menu=document.querySelector('.menu'),nav=document.querySelector('#nav');me
   const dialog = document.getElementById("blog-dialog");
   const triggers = document.querySelectorAll("[data-open-blog]");
   const closeButton = dialog?.querySelector(".blog-dialog-close");
+  const countdown = document.getElementById("blog-countdown-value");
+  const destination = document.getElementById("blog");
 
-  if (!dialog || !triggers.length) return;
+  if (!dialog || !triggers.length || !countdown || !destination) {
+    return;
+  }
+
+  let intervalId = null;
+  let timeoutId = null;
+  let shouldNavigate = false;
+
+  const clearCountdown = () => {
+    if (intervalId !== null) {
+      window.clearInterval(intervalId);
+      intervalId = null;
+    }
+
+    if (timeoutId !== null) {
+      window.clearTimeout(timeoutId);
+      timeoutId = null;
+    }
+  };
+
+  const startCountdown = () => {
+    clearCountdown();
+
+    let remaining = 3;
+    countdown.textContent = String(remaining);
+    shouldNavigate = true;
+
+    intervalId = window.setInterval(() => {
+      remaining -= 1;
+
+      if (remaining > 0) {
+        countdown.textContent = String(remaining);
+        return;
+      }
+
+      clearCountdown();
+
+      if (!dialog.open || !shouldNavigate) return;
+
+      dialog.close();
+
+      const reduceMotion = window.matchMedia(
+        "(prefers-reduced-motion: reduce)"
+      ).matches;
+
+      timeoutId = window.setTimeout(() => {
+        destination.scrollIntoView({
+          behavior: reduceMotion ? "auto" : "smooth",
+          block: "start"
+        });
+        timeoutId = null;
+      }, 80);
+    }, 1000);
+  };
 
   triggers.forEach((trigger) => {
     trigger.addEventListener("click", (event) => {
@@ -147,18 +202,33 @@ const menu=document.querySelector('.menu'),nav=document.querySelector('#nav');me
 
       if (!dialog.open) {
         dialog.showModal();
+        startCountdown();
       }
     });
   });
 
   closeButton?.addEventListener("click", () => {
+    shouldNavigate = false;
+    clearCountdown();
     dialog.close();
   });
 
   dialog.addEventListener("click", (event) => {
     if (event.target === dialog) {
+      shouldNavigate = false;
+      clearCountdown();
       dialog.close();
     }
   });
+
+  dialog.addEventListener("cancel", () => {
+    shouldNavigate = false;
+    clearCountdown();
+  });
+
+  dialog.addEventListener("close", () => {
+    clearCountdown();
+  });
 })();
+
 

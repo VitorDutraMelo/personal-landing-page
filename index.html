@@ -7,7 +7,26 @@
 <section class="skills shell"><h2>MINHAS SKILLS</h2><div id="technologies" class="technology-grid"></div></section>
 <section class="about shell" id="sobre"><div class="about-visual"><img src="assets/character/v2/vitor-about.png" alt="Ilustração de Vitor Melo"/></div><div class="about-copy"><h2>SOBRE MIM</h2><p>Sou o Vitor Melo, desenvolvedor Back-end, apaixonado por tecnologia, produtos digitais e por transformar ideias em soluções reais. Atualmente moro em Londres e sigo evoluindo nos estudos e projetos.</p><button type="button" id="open-journey" class="journey-trigger" aria-haspopup="dialog" aria-controls="journey-dialog">Conheça minha jornada →</button></div><ul class="about-facts"><li><b>⌘</b><span>Backend & APIs<small>Foco de desenvolvimento</small></span></li><li><b>⌁</b><span>Londres, UK<small>Base atual</small></span></li><li><b>▱</b><span>Em constante evolução<small>Estudos e projetos</small></span></li></ul></section>
 <section class="services shell" id="servicos"><h2>O QUE EU FAÇO</h2><div><article><b>01</b><h3>Desenvolvimento de APIs</h3><p>APIs REST, autenticação, integrações e arquitetura.</p></article><article><b>02</b><h3>Desenvolvimento Web</h3><p>Aplicações e sites responsivos com interfaces modernas.</p></article><article><b>03</b><h3>Banco de Dados</h3><p>Modelagem, otimização e integração com bancos relacionais.</p></article><article><b>04</b><h3>Integrações</h3><p>Comunicação entre sistemas, serviços externos e automações.</p></article></div></section>
-<section class="blog shell" id="blog">Blog em preparação — estudos, processos e aprendizados de desenvolvimento.</section><section class="contact shell" id="contato"><h2>VAMOS<br/>CONVERSAR?</h2><p>Tenho ideias, projetos e estou sempre aberto a novas oportunidades e parcerias.</p><a class="button lime" href="https://wa.me/447771223604" target="_blank" rel="noopener noreferrer">Entrar em Contato</a><div class="social">
+<section class="blog shell" id="blog">
+  <div class="dev-notes-card">
+    <div class="dev-notes-top">
+      <span class="dev-notes-status">EM BREVE</span>
+      <span class="dev-notes-terminal" aria-hidden="true">&gt;_</span>
+    </div>
+
+    <h2>DEV NOTES<span>_</span></h2>
+
+    <p>
+      Bastidores do desenvolvimento, arquitetura de APIs,
+      desafios reais e aprendizados construindo produtos digitais.
+    </p>
+
+    <div class="dev-notes-footer">
+      <span aria-hidden="true">⌁</span>
+      Conteúdo em preparação
+    </div>
+  </div>
+</section><section class="contact shell" id="contato"><h2>VAMOS<br/>CONVERSAR?</h2><p>Tenho ideias, projetos e estou sempre aberto a novas oportunidades e parcerias.</p><a class="button lime" href="https://wa.me/447771223604" target="_blank" rel="noopener noreferrer">Entrar em Contato</a><div class="social">
   <a href="https://github.com/VitorDutraMelo" target="_blank" rel="noopener noreferrer" aria-label="GitHub" title="GitHub"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
 <path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.57.1.78-.25.78-.55v-2.14c-3.2.7-3.87-1.36-3.87-1.36-.52-1.33-1.28-1.69-1.28-1.69-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.76 2.7 1.25 3.36.96.1-.75.4-1.25.73-1.54-2.56-.29-5.25-1.28-5.25-5.69 0-1.26.45-2.29 1.18-3.1-.12-.29-.51-1.47.11-3.06 0 0 .96-.31 3.16 1.18a11 11 0 0 1 5.75 0c2.2-1.49 3.16-1.18 3.16-1.18.62 1.59.23 2.77.11 3.06.74.81 1.18 1.84 1.18 3.1 0 4.42-2.7 5.4-5.27 5.69.41.35.77 1.03.77 2.08v3.08c0 .31.21.66.79.55A11.51 11.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"/>
 </svg></a>
@@ -58,6 +77,7 @@
 
   </div>
 </dialog>
+
 <dialog id="blog-dialog" class="blog-dialog" aria-labelledby="blog-dialog-title">
   <div class="blog-dialog-inner">
     <button type="button" class="blog-dialog-close" aria-label="Fechar aviso do blog">×</button>
@@ -71,12 +91,17 @@
 
     <h2 id="blog-dialog-title">EM BREVE!</h2>
     <p>Em breve disponível para vocês!</p>
+    <div class="blog-countdown" aria-live="off">
+      <strong id="blog-countdown-value">3</strong>
+      <small>Redirecionando para DEV NOTES_</small>
+    </div>
   </div>
 </dialog>
 <script src="journey-content.js"></script>
 <script src="app.js"></script>
 
 </body></html>
+
 
 
 
